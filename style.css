@@ -1,0 +1,51 @@
+/* CSS personalizado para a página inicial do CleanPro */
+
+/* Define a cor primária para elementos personalizados (Opcional: o Bootstrap lida com a maioria dos tons de azul) */
+/* A cor primária padrão do Bootstrap é um azul adequado */
+:root {
+    --bs-primary: #007bff; /* Azul padrão do Bootstrap */
+}
+
+/* Garante que o fundo do corpo seja explicitamente branco e que o texto seja legível */
+body {
+    background-color: white !important;
+    color: #333;/* Cinza escuro para texto geral para melhor legibilidade em fundo branco */
+}
+
+/* Personalizando os links de navegação para combinar com o tema azul */
+.navbar-brand, .nav-link {
+    font-weight: 500;
+}
+
+/* Estilos personalizados para o carrossel/slider para enfatizar o conteúdo */
+#serviceCarousel .carousel-item {
+    border: 1px solid var(--bs-primary);
+    border-radius: 0.5rem;
+    background-color: white; /* Manter o tema branco dentro do slider */
+}
+
+/* Garante que os controles do carrossel estejam visíveis contra o fundo branco */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Deixa os ícones brancos */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.2); /* Fundo escuro semitransparente para melhor visibilidade */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Ajustando a cor do texto no formulário de contato para manter a consistência */
+.form-label {
+    color: var(--bs-primary) !important;
+}
+
+/* Certifica de que a seção de fundo claro seja ligeiramente esbranquiçada */
+#contact.bg-light {
+    background-color: #f8f9fa !important;
+}
