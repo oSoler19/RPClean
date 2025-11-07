@@ -45,6 +45,10 @@ body {
     color: var(--bs-primary) !important;
 }
 
+.img-logo{
+    height: 100px;
+}
+
 /* Certifica de que a seção de fundo claro seja ligeiramente esbranquiçada */
 #contact.bg-light {
     background-color: #f8f9fa !important;
