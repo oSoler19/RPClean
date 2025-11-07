@@ -1,17 +1,10 @@
-const phone = "Numero do celular"
+const phone = "ColocarNumeroDeTelefone"
 
 function redirectUser() {
+    const service = document.getElementById('service').value.toLowerCase()
     
-    const name = document.getElementById('name').value
-    const service = document.getElementById('service').value
-    const message  = document.getElementById('message').value
-
-    const text = 
-        "*Contato via formulário*" + "\n"+
-        "*Nome:* " + name + "\n"+
-        "*Serviço:* " + service + "\n"+
-        "*Mensagem:*" + "\n" + message
-
+    const text = "Tudo bem? estou interessado no serviço de "+service+", poderia me dizer os valores?"
+        
     const urlEncode = encodeURIComponent(text)
     const url = "https://wa.me/"+phone+"?text="+urlEncode
 
