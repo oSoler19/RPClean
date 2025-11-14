@@ -12,6 +12,12 @@ body {
     color: #333;/* Cinza escuro para texto geral para melhor legibilidade em fundo branco */
 }
 
+
+header {
+    background: url('./assets/headerbg.jpg');
+    width: 100%;
+}
+
 /* Personalizando os links de navegação para combinar com o tema azul */
 .navbar-brand, .nav-link {
     font-weight: 500;
@@ -26,18 +32,17 @@ body {
 
 /* Garante que os controles do carrossel estejam visíveis contra o fundo branco */
 .carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(100%); /* Deixa os ícones brancos */
+.carousel-control-next-icon,
+.carousel-indicators {
+    filter: invert(100%); /* Deixa os ícones pretos */
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    background-color: rgba(0, 0, 0, 0.2); /* Fundo escuro semitransparente para melhor visibilidade */
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    bottom: 0;
+    /* background-color: rgba(0, 0, 0, 0.2); Fundo escuro semitransparente para melhor visibilidade */
+    width: 15%;
 }
 
 /* Ajustando a cor do texto no formulário de contato para manter a consistência */
@@ -52,4 +57,9 @@ body {
 /* Certifica de que a seção de fundo claro seja ligeiramente esbranquiçada */
 #contact.bg-light {
     background-color: #f8f9fa !important;
+}
+
+#serviceVideo {
+    border-radius: 0.5rem;
+    border: 2px solid var(--bs-primary);
 }
