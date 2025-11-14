@@ -1,4 +1,4 @@
-const phone = "ColocarNumeroDeTelefone"
+const phone = "5517997765728"
 
 function redirectUser() {
     const service = document.getElementById('service').value.toLowerCase()
