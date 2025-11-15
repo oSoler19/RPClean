@@ -14,8 +14,9 @@ body {
 
 
 header {
-    background: url('./assets/headerbg.jpg');
-    width: 100%;
+    background: no-repeat url('./assets/headerbg.jpg');
+    background-size: cover;
+    background-position: 50% 10%;
 }
 
 /* Personalizando os links de navegação para combinar com o tema azul */
@@ -62,4 +63,5 @@ header {
 #serviceVideo {
     border-radius: 0.5rem;
     border: 2px solid var(--bs-primary);
+
 }
