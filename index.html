@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +9,19 @@
 </head>
 <body class="bg-white">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <nav class="navbar navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand text-primary fw-bold" href="#">
                 <img class="img-fluid img-logo" src="./assets/logo.png" alt="Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-primary" href="#services">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-primary" href="#contact">Contato</a>
-                    </li>
-                </ul>
+
+            <div class="d-flex align-items-center gap-3"> 
+                <a href="https://www.facebook.com/share/17eitBon5B/" target="_blank">
+                    <img src="./assets/facebook.svg" class="social-icon" alt="Facebook">
+                </a>
+                <a href="https://wa.me/message/RMDHJWCOJCYTA1" target="_blank">
+                    <img src="./assets/whatsapp.svg" class="social-icon" alt="WhatsApp">
+                </a>
             </div>
         </div>
     </nav>
@@ -85,27 +81,28 @@
             </div>
             
             <div class="py-5 d-flex justify-content-center container">
-                <video id="serviceVideo" class="w-100" src="./assets/video.mp4" controls>
+                <video id="serviceVideo" class="w-100" src="./assets/video.mp4" controls></video>
             </div>
 
         </div>
     </section>
 
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4 text-primary">Entre em contato conosco para solicitar um orçamento.</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <form onsubmit="return redirectUser()">
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 text-primary">Solicite seu orçamento</h2>
 
+        <div class="row g-5 align-items-center justify-content-center">
+            
+            <div class="col-12 col-lg-6">
+                <div class="p-4 bg-white rounded shadow-sm">
+                    <form onsubmit="return redirectUser()">
                         <div class="mb-3">
-                            <label for="serviço" class="form-label text-primary">Serviço necessário</label>
-                            <select class="form-select" id="service" required>
+                            <label for="service" class="form-label text-primary">Serviço necessário</label>
+                            <select class="form-select form-select-lg" id="service" required>
                                 <option selected disabled value="">Escolha...</option>
                                 <option>Limpeza de estofados</option>
                                 <option>Detalhamento do interior do veículo</option>
                                 <option>Remoção de manchas e odores</option>
-                                <option>Outro</option>
                             </select>
                         </div>
                         <div class="d-grid">
@@ -114,10 +111,41 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <footer class="bg-primary text-white py-3">
+            <div class="col-12 col-lg-5 offset-lg-1 text-center text-lg-start">
+                <h3 class="text-primary mb-4">Formas de Pagamento</h3>
+
+                <div class="mb-4">
+                    <h5 class="text-secondary mb-2"><i class="bi bi-lightning-charge-fill"></i> Pix</h5>
+                    <div class="d-inline-block p-2 bg-white payment-box ">
+                        <img src="./assets/pix.svg" class="payment-icon img-fluid" alt="Pix">
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="text-secondary mb-2">Débito ou Crédito</h5>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
+                        <div class="bg-white p-2 payment-box">
+                            <img src="./assets/visa.png" class="payment-icon" alt="Visa">
+                        </div>
+                        <div class="bg-white p-2 payment-box">
+                            <img src="./assets/master_card.svg" class="payment-icon" alt="Mastercard">
+                        </div>
+                        <div class="bg-white p-2 payment-box">
+                            <img src="./assets/elo.png" class="payment-icon" alt="Elo">
+                        </div>
+                        <div class="bg-white p-2 payment-box">
+                            <img src="./assets/hipercard.png" class="payment-icon" alt="Hipercard">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <footer class="bg-primary text-white py-3 d-flex align-items-center justify-content-around">
         <div class="container text-center">
             <p class="mb-0">&copy; 2025 RPClean. Todos os direitos reservados.</p>
         </div>
