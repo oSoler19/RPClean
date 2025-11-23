@@ -7,7 +7,7 @@ https://osoler19.github.io/RPClean/**
 
 ## Tecnologias utilizadas
 - **Estrutura:** HTML5
-- **Estilo:** CCS3 (com Bootstrap)
+- **Estilo:** CSS3 (com Bootstrap)
 - **Interatividade:** JavaScript (Vanilla)
 
 
