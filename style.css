@@ -1,9 +1,5 @@
-/* CSS personalizado para a página inicial do CleanPro */
-
-/* Define a cor primária para elementos personalizados (Opcional: o Bootstrap lida com a maioria dos tons de azul) */
-/* A cor primária padrão do Bootstrap é um azul adequado */
 :root {
-    --bs-primary: #007bff; /* Azul padrão do Bootstrap */
+    --bs-primary: #007bff;
 }
 
 /* Garante que o fundo do corpo seja explicitamente branco e que o texto seja legível */
@@ -28,7 +24,7 @@ header {
 #serviceCarousel .carousel-item {
     border: 1px solid var(--bs-primary);
     border-radius: 0.5rem;
-    background-color: white; /* Manter o tema branco dentro do slider */
+    background-color: white;
 }
 
 /* Garante que os controles do carrossel estejam visíveis contra o fundo branco */
@@ -41,8 +37,7 @@ header {
 .carousel-control-prev,
 .carousel-control-next {
     top: 0;
-    bottom: 0;
-    /* background-color: rgba(0, 0, 0, 0.2); Fundo escuro semitransparente para melhor visibilidade */
+    bottom: 0;
     width: 15%;
 }
 
